@@ -161,7 +161,7 @@ export class ConnectionForm {
         <div class="pt-4">
           <button id="connect-btn" class="cyber-button w-full py-3 px-4 text-xs font-bold tracking-[0.1em] uppercase flex items-center justify-center gap-2 bg-[#4af626] text-[#022100]" type="button">
             <span class="material-symbols-outlined" style="font-size: 18px;">power_settings_new</span>
-            Execute_Connection
+            连接服务器
           </button>
         </div>
         <div class="flex justify-between items-center mt-4">
