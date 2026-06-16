@@ -132,7 +132,7 @@ export class ConnectionForm {
           <label class="block text-xs font-bold tracking-[0.1em] text-[#bbccb0] mb-2">AUTH_USER</label>
           <div class="flex items-center">
             <span class="material-symbols-outlined text-[#bbccb0] mr-2" style="font-size: 16px;">person</span>
-            <input id="username" class="terminal-input text-[13px]" placeholder="admin" type="text" required>
+            <input id="username" class="terminal-input text-[13px]" placeholder="root" value="root" type="text" required>
           </div>
         </div>
         <div>
