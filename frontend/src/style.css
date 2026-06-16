@@ -7,7 +7,7 @@
 body {
   font-family: 'JetBrains Mono', monospace;
   background-color: #0a0a0a;
-  color: #0088ff;
+  color: #4af626;
   min-height: 100vh;
   overflow: hidden;
 }
@@ -35,7 +35,7 @@ body {
 }
 
 .terminal-input:focus {
-  border-bottom: 1px solid #0088ff;
+  border-bottom: 1px solid #4af626;
   box-shadow: none;
 }
 
@@ -60,13 +60,13 @@ body {
 }
 
 .cyber-button {
-  border: 1px solid #0088ff; color: #0088ff;
+  border: 1px solid #4af626; color: #4af626;
   transition: all 0.2s ease; position: relative; overflow: hidden;
   cursor: pointer;
 }
 
 .cyber-button:hover {
-  background-color: #0088ff;
+  background-color: #4af626;
   color: #0a0a0a;
 }
 
