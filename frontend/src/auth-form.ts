@@ -116,8 +116,8 @@ export class ConnectionForm {
           <div class="col-span-3">
             <label class="block text-xs font-bold tracking-[0.1em] text-[#bbccb0] mb-2">服务器IP/主机名</label>
             <div class="flex items-center">
-              <span class="text-[#bbccb0] mr-2">&gt;</span>
-               <input id="host" class="terminal-input text-[13px]" placeholder="192.168.1.1" type="text" required>
+              <span class="material-symbols-outlined text-[#bbccb0] mr-2" style="font-size: 16px;">computer</span>
+              <input id="host" class="terminal-input text-[13px]" placeholder="192.168.1.1" type="text" required>
             </div>
           </div>
           <div class="col-span-1">
