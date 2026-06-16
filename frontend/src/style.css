@@ -7,18 +7,11 @@
 body {
   font-family: 'JetBrains Mono', monospace;
   background-color: #0a0a0a;
-  color: #4af626;
+  color: #0088ff;
   min-height: 100vh;
   overflow: hidden;
 }
 
-.scanlines {
-  position: fixed; top: 0; left: 0;
-  width: 100vw; height: 100vh;
-  background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.1));
-  background-size: 100% 4px;
-  pointer-events: none; z-index: 50;
-}
 
 .flicker {
   animation: flicker 0.15s infinite;
@@ -35,14 +28,14 @@ body {
 
 .terminal-input {
   background: transparent; border: none;
-  border-bottom: 1px solid #3c4b36; color: #4af626;
+  border-bottom: 1px solid #3c4b36; color: #0088ff;
   font-family: 'JetBrains Mono', monospace;
   padding: 8px 0; width: 100%; outline: none;
   transition: border-color 0.2s;
 }
 
 .terminal-input:focus {
-  border-bottom: 1px solid #4af626;
+  border-bottom: 1px solid #0088ff;
   box-shadow: none;
 }
 
@@ -67,23 +60,18 @@ body {
 }
 
 .cyber-button {
-  border: 1px solid #4af626; color: #4af626;
+  border: 1px solid #0088ff; color: #0088ff;
   transition: all 0.2s ease; position: relative; overflow: hidden;
   cursor: pointer;
 }
 
 .cyber-button:hover {
-  background-color: #4af626;
+  background-color: #0088ff;
   color: #0a0a0a;
 }
 
 .cursor-blink {
   animation: blink 1s step-end infinite;
-}
-
-.scanline {
-  background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.1));
-  background-size: 100% 4px;
 }
 
 .custom-scrollbar::-webkit-scrollbar {
