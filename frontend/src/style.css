@@ -28,7 +28,7 @@ body {
 
 .terminal-input {
   background: transparent; border: none;
-  border-bottom: 1px solid #3c4b36; color: #0088ff;
+  border-bottom: 1px solid #3c4b36; color: #000;
   font-family: 'JetBrains Mono', monospace;
   padding: 8px 0; width: 100%; outline: none;
   transition: border-color 0.2s;
