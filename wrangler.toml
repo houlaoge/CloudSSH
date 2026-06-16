@@ -1,4 +1,4 @@
-name = "cloudssh"
+name = "ssh"
 main = "src/worker/index.ts"
 compatibility_date = "2024-12-01"
 compatibility_flags = ["nodejs_compat"]
@@ -12,7 +12,7 @@ workers_dev = false
 # TURNSTILE_SITEKEY = "your-turnstile-site-key"
 
 [[routes]]
-pattern = "ssh.newbietan.cn"
+pattern = "ssh.houlaoge.workers.dev"
 custom_domain = true
 
 [[durable_objects.bindings]]
