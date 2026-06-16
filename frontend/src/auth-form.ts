@@ -156,7 +156,7 @@ export class ConnectionForm {
         </div>
         <div class="flex items-center gap-2 mt-2">
           <input type="checkbox" id="remember-me" class="accent-[#4af626] w-4 h-4 cursor-pointer">
-          <label for="remember-me" class="text-xs text-[#bbccb0] cursor-pointer select-none">记住此连接</label>
+          <label for="remember-me" class="text-xs text-[#bbccb0] cursor-pointer select-none">记住此连接[仅保存在当前浏览器]</label>
         </div>
         <div class="pt-4">
           <button id="connect-btn" class="cyber-button w-full py-3 px-4 text-xs font-bold tracking-[0.1em] uppercase flex items-center justify-center gap-2 bg-[#4af626] text-[#022100]" type="button">
