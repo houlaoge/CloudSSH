@@ -114,7 +114,7 @@ export class ConnectionForm {
       <form class="space-y-6" id="connection-form">
         <div class="grid grid-cols-4 gap-4">
           <div class="col-span-3">
-            <label class="block text-xs font-bold tracking-[0.1em] text-[#bbccb0] mb-2">服务器IP</label>
+            <label class="block text-xs font-bold tracking-[0.1em] text-[#bbccb0] mb-2">服务器IP/主机名</label>
             <div class="flex items-center">
               <span class="text-[#bbccb0] mr-2">&gt;</span>
                <input id="host" class="terminal-input text-[13px]" placeholder="192.168.1.1" type="text" required>
@@ -129,7 +129,7 @@ export class ConnectionForm {
           </div>
         </div>
         <div>
-          <label class="block text-xs font-bold tracking-[0.1em] text-[#bbccb0] mb-2">账号</label>
+          <label class="block text-xs font-bold tracking-[0.1em] text-[#bbccb0] mb-2">用户名</label>
           <div class="flex items-center">
             <span class="material-symbols-outlined text-[#bbccb0] mr-2" style="font-size: 16px;">person</span>
             <input id="username" class="terminal-input text-[13px]" placeholder="root" value="root" type="text" required>
@@ -144,7 +144,7 @@ export class ConnectionForm {
           <div id="auth-password-section">
             <div class="flex items-center">
               <span class="material-symbols-outlined text-[#bbccb0] mr-2" style="font-size: 16px;">key</span>
-              <input id="password" class="terminal-input text-[13px]" placeholder="••••••••" type="password">
+              <input id="password" class="terminal-input text-[13px]" placeholder="请输入服务器密码" type="password">
             </div>
           </div>
           <div id="auth-key-section" style="display:none;">
