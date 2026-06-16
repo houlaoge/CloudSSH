@@ -114,14 +114,14 @@ export class ConnectionForm {
       <form class="space-y-6" id="connection-form">
         <div class="grid grid-cols-4 gap-4">
           <div class="col-span-3">
-            <label class="block text-xs font-bold tracking-[0.1em] text-[#bbccb0] mb-2">HOST_ADDRESS</label>
+            <label class="block text-xs font-bold tracking-[0.1em] text-[#bbccb0] mb-2">服务器IP</label>
             <div class="flex items-center">
               <span class="text-[#bbccb0] mr-2">&gt;</span>
-               <input id="host" class="terminal-input text-[13px]" placeholder="192.168.1.1 or 2001:db8::1" type="text" required>
+               <input id="host" class="terminal-input text-[13px]" placeholder="192.168.1.1" type="text" required>
             </div>
           </div>
           <div class="col-span-1">
-            <label class="block text-xs font-bold tracking-[0.1em] text-[#bbccb0] mb-2">PORT</label>
+            <label class="block text-xs font-bold tracking-[0.1em] text-[#bbccb0] mb-2">端口</label>
             <div class="flex items-center">
               <span class="text-[#bbccb0] mr-2">:</span>
               <input id="port" class="terminal-input text-[13px]" placeholder="22" type="text" value="22">
@@ -129,17 +129,17 @@ export class ConnectionForm {
           </div>
         </div>
         <div>
-          <label class="block text-xs font-bold tracking-[0.1em] text-[#bbccb0] mb-2">AUTH_USER</label>
+          <label class="block text-xs font-bold tracking-[0.1em] text-[#bbccb0] mb-2">账号</label>
           <div class="flex items-center">
             <span class="material-symbols-outlined text-[#bbccb0] mr-2" style="font-size: 16px;">person</span>
             <input id="username" class="terminal-input text-[13px]" placeholder="root" value="root" type="text" required>
           </div>
         </div>
         <div>
-          <label class="block text-xs font-bold tracking-[0.1em] text-[#bbccb0] mb-2">AUTH_METHOD</label>
+          <label class="block text-xs font-bold tracking-[0.1em] text-[#bbccb0] mb-2">认证方式</label>
           <div class="flex gap-2 mb-3">
-            <button type="button" id="auth-tab-password" class="auth-tab px-3 py-1 text-[11px] font-bold tracking-[0.1em] border border-[#0088ff] text-[#0088ff] bg-transparent cursor-pointer transition-all" style="background:#0088ff;color:#0a0a0a;">PASSWORD</button>
-            <button type="button" id="auth-tab-key" class="auth-tab px-3 py-1 text-[11px] font-bold tracking-[0.1em] border border-[#3c4b36] text-[#bbccb0] bg-transparent cursor-pointer transition-all">PRIVATE_KEY</button>
+            <button type="button" id="auth-tab-password" class="auth-tab px-3 py-1 text-[11px] font-bold tracking-[0.1em] border border-[#4af626] text-[#4af626] bg-transparent cursor-pointer transition-all" style="background:#4af626;color:#0a0a0a;">密码</button>
+            <button type="button" id="auth-tab-key" class="auth-tab px-3 py-1 text-[11px] font-bold tracking-[0.1em] border border-[#3c4b36] text-[#bbccb0] bg-transparent cursor-pointer transition-all">密钥</button>
           </div>
           <div id="auth-password-section">
             <div class="flex items-center">
@@ -155,11 +155,11 @@ export class ConnectionForm {
           <div id="turnstile-widget" class="flex justify-center"></div>
         </div>
         <div class="flex items-center gap-2 mt-2">
-          <input type="checkbox" id="remember-me" class="accent-[#0088ff] w-4 h-4 cursor-pointer">
-          <label for="remember-me" class="text-xs text-[#bbccb0] cursor-pointer select-none">REMEMBER_CONNECTION</label>
+          <input type="checkbox" id="remember-me" class="accent-[#4af626] w-4 h-4 cursor-pointer">
+          <label for="remember-me" class="text-xs text-[#bbccb0] cursor-pointer select-none">记住此连接</label>
         </div>
         <div class="pt-4">
-          <button id="connect-btn" class="cyber-button w-full py-3 px-4 text-xs font-bold tracking-[0.1em] uppercase flex items-center justify-center gap-2 bg-[#0088ff] text-[#022100]" type="button">
+          <button id="connect-btn" class="cyber-button w-full py-3 px-4 text-xs font-bold tracking-[0.1em] uppercase flex items-center justify-center gap-2 bg-[#4af626] text-[#022100]" type="button">
             <span class="material-symbols-outlined" style="font-size: 18px;">power_settings_new</span>
             Execute_Connection
           </button>
@@ -199,14 +199,14 @@ export class ConnectionForm {
     const keySection = document.getElementById('auth-key-section')!;
 
     if (mode === 'password') {
-      pwTab.style.background = '#0088ff'; pwTab.style.color = '#0a0a0a';
-      pwTab.style.borderColor = '#0088ff';
+      pwTab.style.background = '#4af626'; pwTab.style.color = '#0a0a0a';
+      pwTab.style.borderColor = '#4af626';
       keyTab.style.background = 'transparent'; keyTab.style.color = '#bbccb0';
       keyTab.style.borderColor = '#3c4b36';
       pwSection.style.display = ''; keySection.style.display = 'none';
     } else {
-      keyTab.style.background = '#0088ff'; keyTab.style.color = '#0a0a0a';
-      keyTab.style.borderColor = '#0088ff';
+      keyTab.style.background = '#4af626'; keyTab.style.color = '#0a0a0a';
+      keyTab.style.borderColor = '#4af626';
       pwTab.style.background = 'transparent'; pwTab.style.color = '#bbccb0';
       pwTab.style.borderColor = '#3c4b36';
       keySection.style.display = ''; pwSection.style.display = 'none';
