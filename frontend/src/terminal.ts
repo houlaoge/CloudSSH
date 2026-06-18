@@ -65,17 +65,17 @@ export class SSHTerminal {
     window.addEventListener('resize', () => this.fit());
 
     // Right-click paste support
-    this.container.addEventListener('contextmenu', async (e) => {
-      e.preventDefault();
-      try {
-        const text = await navigator.clipboard.readText();
-        if (text && this.ws?.readyState === WebSocket.OPEN) {
-          this.ws.send(text);
-        }
-      } catch (err) {
-        console.error('Failed to read clipboard', err);
-      }
-    });
+    // this.container.addEventListener('contextmenu', async (e) => {
+    //   e.preventDefault();
+    //   try {
+    //     const text = await navigator.clipboard.readText();
+    //     if (text && this.ws?.readyState === WebSocket.OPEN) {
+    //       this.ws.send(text);
+    //     }
+    //   } catch (err) {
+    //     console.error('Failed to read clipboard', err);
+    //   }
+    // });
   }
 
   setTheme(themeName: keyof typeof THEMES): void {
