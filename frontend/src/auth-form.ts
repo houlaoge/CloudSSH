@@ -166,7 +166,7 @@ export class ConnectionForm {
         </div>
         <div class="flex justify-between items-center mt-4">
           <span id="status-text" class="text-[13px] text-[#bbccb0] flex items-center gap-1">
-            <span class="w-2 h-2 bg-[#353534] inline-block"></span> STATUS: OFFLINE
+            <span class="w-2 h-2 bg-[#353534] inline-block"></span> 状态: 离线
           </span>
         </div>
       </form>
